@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "@types/typescript": "^2.0.0",
+    "copyfiles": "^2.4.1",
+    "express": "^4.18.1",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23"
+  },
+  "name": "asteroidsplus",
+  "description": "",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "npm run copy-index && node ./dist/main.js",
+    "copy-index": "copyfiles ./src/client/index.html ./dist/client/ --flat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JanusBifrons/AsteroidsPlus.git"
+  },
+  "author": "Alec Vickers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JanusBifrons/AsteroidsPlus/issues"
+  },
+  "homepage": "https://github.com/JanusBifrons/AsteroidsPlus#readme"
+}
